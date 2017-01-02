@@ -1,0 +1,16 @@
+{
+  "name": "ins-cockroach",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/ins-cockroach.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "rm -rf lib; babel src -d lib"
+  },
+  "dependencies": {
+    "betturl": "0.2.3",
+    "pg": "6.1.2"
+  }
+}

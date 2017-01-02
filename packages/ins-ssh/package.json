@@ -1,0 +1,16 @@
+{
+  "name": "ins-ssh",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/ins-ssh.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "build": "rm -rf lib; babel src -d lib"
+  },
+  "dependencies": {
+    "buffer-equal-constant-time": "1.0.1",
+    "ssh2": "0.5.4"
+  }
+}
