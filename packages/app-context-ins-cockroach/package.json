@@ -1,6 +1,6 @@
 {
   "name": "app-context-ins-cockroach",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "lib/app-context-ins-cockroach.js",
   "keywords": [],
@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@mattinsler/app-context-create-connections": "0.0.1",
-    "ins-cockroach": "^0.0.1"
+    "ins-cockroach": "^0.0.2"
   }
 }
