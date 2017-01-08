@@ -43,21 +43,15 @@ class Server {
   }
 
   onClient(client) {
-    client.on('authentication', (ctx) => {
+    client.on('authentication', async (ctx) => {
       let handled = false;
       const { method } = ctx;
 
-      console.log(method);
-      console.log(this.authModules.map(a => a.method));
-
       const auth = this.authModules.find(a => a.method === method);
-      console.log(auth);
 
       if (!auth) { return ctx.reject(); }
 
-      console.log('AUTH');
-
-      if (auth.authenticate(ctx, client)) {
+      if (await auth.authenticate(ctx, client)) {
         ctx.accept();
       } else {
         ctx.reject();

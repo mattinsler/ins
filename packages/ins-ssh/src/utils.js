@@ -3,8 +3,8 @@ import path from 'path';
 import { execSync } from 'child_process';
 
 export function createKeypair(dir, keyname) {
-  if (!fs.existsSync(keyDir)) {
-    fs.mkdirSync(keyDir);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
   }
   const keyfile = path.join(dir, keyname);
   if (!fs.existsSync(keyfile)) {
