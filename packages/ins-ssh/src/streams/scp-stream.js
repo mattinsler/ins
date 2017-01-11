@@ -59,7 +59,8 @@ class ScpStream extends Transform {
         // console.log(message);
         if (message.type === 'COPY') {
           this.current = {
-            filename: this.target,
+            target: this.target,
+            filename: message.filename,
             mode: message.mode,
             size: message.size,
             bytesWritten: 0,
